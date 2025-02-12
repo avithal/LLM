@@ -2,8 +2,8 @@ from langchain_ollama import ChatOllama
 llm =ChatOllama(model="deepseek-r1:8b", temperature=0)
 llm_json_mode =ChatOllama(model="deepseek-r1:8b", temperature=0, format="json") ## no think tokens
 ## with think token
-# msg=llm.invoke("what is the capital of Israel")
-# print(msg.content)
+msg=llm.invoke("Who is the president of the United Statesin 2021?")
+print(msg.content)
 
 # without think token
 import json
